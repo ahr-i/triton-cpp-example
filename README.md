@@ -10,7 +10,7 @@ In this project, we implement a very simple example that addresses the scale-out
 The configuration is as follows:   
 | Service | Description |
 |:---|:---|
-| Frontend + Backend Server | Provides server code to verify actual operation. |
+| Frontend <br>+ Backend Server | Provides server code to verify actual operation. |
 | Gateway | The entry point for user requests and responses. |
 | Scheduler | Schedules which Triton node should handle the request. <br>In this project, a simple round-robin method is used. |
 | Triton Node | Consists of two parts: <br>  * Triton Server: Performs inference using AI models. <br>  * Manager: Manages the Triton server. It announces itself with health check messages and forwards requests to the Triton server. |
