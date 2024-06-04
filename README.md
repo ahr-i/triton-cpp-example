@@ -16,3 +16,9 @@ The configuration is as follows:
 | Triton Node | Consists of two parts: <br>  * Triton Server: Performs inference using AI models. <br>  * Manager: Manages the Triton server. It announces itself with health check messages and forwards requests to the Triton server. |
 | Health Checker | Monitors Triton nodes. <br>Continuously creates a list of nodes and provides it to the scheduler. |
 | Blockchain-Based Payment System | Implements a payment system. |
+
+## 1. Open Source Used
+| Repository | Description | URL |
+|:---|:---|:--:|
+| triton-inference-server | Connected to the Manager to serve AI models using Nvidia's Triton. <br>This project uses version 23.12-py3. | [LINK](https://github.com/triton-inference-server/server) |
+| go-ethereum | Used go-ethereum to build a private network for a blockchain-based payment system. <br>This project uses version 1.14.3. | [LINK](https://github.com/ethereum/go-ethereum) |
