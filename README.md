@@ -21,4 +21,4 @@ The configuration is as follows:
 | Repository | Description | URL |
 |:---|:---|:--:|
 | triton-inference-server | Connected to the Manager to serve AI models using Nvidia's Triton. <br>This project uses version 23.12-py3. | [LINK](https://github.com/triton-inference-server/server) |
-| go-ethereum | Used go-ethereum to build a private network for a blockchain-based payment system. <br>This project uses version 1.14.3. | [LINK](https://github.com/ethereum/go-ethereum) |
+| go-ethereum | Used go-ethereum to build a private network for a blockchain-based payment system. <br>This project uses version 1.13.15. | [LINK](https://github.com/ethereum/go-ethereum) |
