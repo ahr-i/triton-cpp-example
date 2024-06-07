@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:
+    'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.nav-bar {
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown {
+    margin-left: 20px;
+}
+
+.dropdown-menu {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+    width: 500px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.input-area {
+    margin-bottom: 20px;
+}
+
+#text-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#provider-input {
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.submit-btn {
+    background-color: #006eff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0051cc;
+}
+
+.line {
+    border-bottom: 1px solid #ccc
+}
+
+.image-display {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}

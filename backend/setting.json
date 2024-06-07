@@ -1,0 +1,4 @@
+{
+  "server_port": "80",
+  "gateway_address": "http://127.0.0.1:8080"
+}

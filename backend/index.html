@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <title>Text to Image</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-buttons-container">
+            <button id="tab-button-1" class="nav-button">Triton C++ Example</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="input-area">
+            <textarea id="text-input" placeholder="Prompt Here..."></textarea>
+            <div class="btn-container">
+                <button id="submit" class="submit-btn">Generate</button>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div id="loading" class="image-display"></div>
+
+        <div id="image-display" class="image-display">
+
+        </div>
+    </div>
+</body>
+</html>
