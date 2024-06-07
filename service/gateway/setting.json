@@ -1,0 +1,5 @@
+{
+  "server_port": "8080",
+  "scheduler_address": "http://127.0.0.1:8081",
+  "payment_address":  "http://127.0.0.1:8083"
+}
