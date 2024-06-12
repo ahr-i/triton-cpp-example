@@ -2,6 +2,8 @@
 This is an example of an AI inference server that can scale out using Triton. The blockchain payment system is a bonus.   
 
 ## 0. Introduction
+Demo video: [LINK](https://www.youtube.com/watch?v=GByNHzyVFS4)   
+
 Nvidia Triton is a very attractive project.   
 It supports various AI models while boasting fast speeds.   
 However, it is not ideal from a scale-out perspective.   
