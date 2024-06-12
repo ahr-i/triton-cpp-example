@@ -12,4 +12,4 @@ IP="102.0.1.9"
 docker network create --subnet $SUBNET $NETWORK
 
 docker build -t $SERVICE_NAME ./triton || { exit 1; }
-docker run -it --rm --name $SERVICE_NAME --gpus all --network $NETWORK --ip 102.0.1.9 -v $PWD/models:/models $SERVICE_NAME tritonserver --model-repository /models || { exit 1; }
+docker run -d --rm --name $SERVICE_NAME --gpus all --network $NETWORK --ip 102.0.1.9 -v $PWD/models:/models $SERVICE_NAME tritonserver --model-repository /models || { exit 1; }
