@@ -28,8 +28,8 @@ void Setting::loadSettings(const std::string& filename) {
     json::value json = json::value::parse(buffer.str());
 
     // Extract "server_port" from the JSON object
-    if (json.has_field(U("server_port")) && json.at(U("server_port")).is_string()) {
-        settings["server_port"] = utility::conversions::to_utf8string(json.at(U("server_port")).as_string());
+    if (json.has_field(U("server_address")) && json.at(U("server_address")).is_string()) {
+        settings["server_address"] = utility::conversions::to_utf8string(json.at(U("server_address")).as_string());
     }
 
     // Extract "scheduler_address" from the JSON object

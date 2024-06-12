@@ -1,5 +1,5 @@
 {
-  "server_address": "http://127.0.0.1",
+  "server_address": "http://102.0.1.5",
   "server_port": "8082",
   "health_check_interval": "10"
 }

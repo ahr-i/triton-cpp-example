@@ -1,0 +1,28 @@
+# Use Ubuntu as the base image
+FROM ubuntu:22.04
+
+# Install necessary packages
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    g++ \
+    libcpprest-dev \
+    libboost-system-dev \
+    libssl-dev \
+    libpng-dev \
+    cmake \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set the working directory
+WORKDIR /app
+
+# Copy source code and Makefile
+COPY . /app
+
+# Compile the application
+RUN make
+
+# Copy the settings file
+COPY setting.json /app/setting.json
+
+# Command to run the application
+CMD ["./server"]

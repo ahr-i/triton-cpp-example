@@ -28,8 +28,8 @@ void Setting::loadSettings(const std::string& filename) {
     json::value json = json::value::parse(buffer.str());
 
     // Store the settings if they are found in the JSON
-    if (json.has_field(U("server_port")) && json.at(U("server_port")).is_string()) {
-        settings["server_port"] = utility::conversions::to_utf8string(json.at(U("server_port")).as_string());
+    if (json.has_field(U("server_address")) && json.at(U("server_address")).is_string()) {
+        settings["server_address"] = utility::conversions::to_utf8string(json.at(U("server_address")).as_string());
     }
 
     if (json.has_field(U("gateway_address")) && json.at(U("gateway_address")).is_string()) {

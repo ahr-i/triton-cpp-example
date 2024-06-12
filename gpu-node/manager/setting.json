@@ -1,5 +1,6 @@
 {
   "server_port": "8001",
-  "triton_address": "http://127.0.0.1:8000",
-  "health_check_url": "http://127.0.0.1:8082"
+  "server_ip": "102.0.1.8",
+  "triton_address": "http://102.0.1.9:8000",
+  "health_check_url": "http://102.0.1.5:8082"
 }
