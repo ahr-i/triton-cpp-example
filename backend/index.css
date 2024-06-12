@@ -1,17 +1,18 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family:
-    'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    background: #1e1e1e;
+    color: #fff;
 }
 
 .nav-bar {
-    background-color: #fff;
-    border-bottom: 1px solid #e1e1e1;
+    background: linear-gradient(90deg, #9b00ff, #ff0080);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav-buttons-container {
@@ -20,30 +21,21 @@ body, html {
 }
 
 .nav-button {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background: transparent;
+    border: 2px solid #fff;
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
     width: 300px;
     text-align: center;
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
 }
 
-.nav-button:hover {
-    background-color: #f0f0f0;
-}
-
-.dropdown {
-    margin-left: 20px;
-}
-
-.dropdown-menu {
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    cursor: pointer;
-    width: 500px;
-}
+    .nav-button:hover {
+        background: #fff;
+        color: #9b00ff;
+    }
 
 .content {
     padding: 20px;
@@ -59,50 +51,48 @@ body, html {
     height: 100px;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
     box-sizing: border-box;
-}
-
-#provider-input {
-    width: 20%;
-    height: 40px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-}
-
-.input-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 .btn-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .submit-btn {
-    background-color: #006eff;
+    background: linear-gradient(90deg, #9b00ff, #ff0080);
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-.submit-btn:hover {
-    background-color: #0051cc;
-}
+    .submit-btn:hover {
+        background: linear-gradient(90deg, #7b0099, #cc0066);
+    }
 
 .line {
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid #444;
+    margin: 20px 0;
 }
 
 .image-display {
     margin-top: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#loading {
+    font-size: 18px;
+    font-weight: bold;
 }

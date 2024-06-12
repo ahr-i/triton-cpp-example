@@ -1,6 +1,7 @@
 #include "scheduler.h"
 #include "setting.h"
 #include <iostream>
+#include <thread>
 
 using namespace std;
 
@@ -22,9 +23,10 @@ int main() {
         Scheduler scheduler(address, health_check_url);
         scheduler.start(); // Start the scheduler
 
-        // Wait for user input to stop the server
-        cout << "Press Enter to stop the server." << endl;
-        cin.get();
+        // Infinite loop to keep the server running
+        cout << "Server is running. Press Ctrl+C to stop the server." << endl;
+        while (true)
+            this_thread::sleep_for(chrono::seconds(1));
 
         // Stop the scheduler
         scheduler.stop();

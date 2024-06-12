@@ -1,6 +1,7 @@
 #include "gateway_server.h"
 #include "setting.h"
 #include <iostream>
+#include <thread>
 
 using namespace std;
 
@@ -10,8 +11,7 @@ int main() {
         Setting setting("setting.json");
 
         // Retrieve the server port, scheduler address, and payment address from the settings
-        string port = setting.get("server_port");
-        string address = "http://127.0.0.1:" + port;
+        string address = setting.get("server_address");
         string scheduler_address = setting.get("scheduler_address");
         string payment_address = setting.get("payment_address");
 
@@ -21,9 +21,10 @@ int main() {
         // Start the server
         server_instance.start();
 
-        // Inform the user to press Enter to stop the server
-        cout << "Press Enter to stop the server." << endl;
-        cin.get();
+        // Infinite loop to keep the server running
+        cout << "Server is running. Press Ctrl+C to stop the server." << endl;
+        while (true)
+            this_thread::sleep_for(chrono::seconds(1));
 
         // Stop the server
         server_instance.stop();

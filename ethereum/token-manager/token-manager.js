@@ -6,7 +6,7 @@ const port = 8083;
 
 /* ----- Setting ----- */
 /* HTTP-rpc Address */
-const web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:8546'));	// HTTP-RPC Address
+const web3 = new Web3(new Web3.providers.HttpProvider('http://102.0.1.7:8546'));	// HTTP-RPC Address
 
 /* Sender Address & Private Key */
 const senderAddr = '0xd5bE5156a8Fa099dd54a45eA4B55c6D1C736E4ea';			// Address of the account sending funds
@@ -84,5 +84,5 @@ app.post('/pay', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://102.0.1.6:${port}`);
 });

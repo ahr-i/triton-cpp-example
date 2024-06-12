@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
-    <title>Text to Image</title>
+    <title>AI Inference: Text to Image</title>
 </head>
 <body>
     <div class="nav-bar">
@@ -16,18 +16,16 @@
     </div>
     <div class="content">
         <div class="input-area">
-            <textarea id="text-input" placeholder="Prompt Here..."></textarea>
+            <textarea id="text-input" placeholder="Enter your prompt here..."></textarea>
             <div class="btn-container">
-                <button id="submit" class="submit-btn">Generate</button>
+                <button id="submit" class="submit-btn">Generate Image</button>
             </div>
         </div>
         <div class="line"></div>
 
         <div id="loading" class="image-display"></div>
 
-        <div id="image-display" class="image-display">
-
-        </div>
+        <div id="image-display" class="image-display"></div>
     </div>
 </body>
 </html>

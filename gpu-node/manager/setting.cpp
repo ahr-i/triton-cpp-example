@@ -31,6 +31,11 @@ void Setting::loadSettings(const std::string& filename) {
         settings["server_port"] = utility::conversions::to_utf8string(json.at(U("server_port")).as_string());
     }
 
+        // Extract the server ip from the JSON content
+    if (json.has_field(U("server_ip")) && json.at(U("server_ip")).is_string()) {
+        settings["server_ip"] = utility::conversions::to_utf8string(json.at(U("server_ip")).as_string());
+    }
+
     // Extract the Triton address from the JSON content
     if (json.has_field(U("triton_address")) && json.at(U("triton_address")).is_string()) {
         settings["triton_address"] = utility::conversions::to_utf8string(json.at(U("triton_address")).as_string());

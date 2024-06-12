@@ -1,6 +1,7 @@
 #include "server.h"
 #include "setting.h"
 #include <iostream>
+#include <thread>
 
 using namespace std;
 
@@ -22,8 +23,10 @@ int main() {
         Server server_instance(address, health_check_interval);
         server_instance.start();
 
-        cout << "Press Enter to stop the server." << endl;
-        cin.get(); // Wait for user input to stop the server
+        // Infinite loop to keep the server running
+        cout << "Server is running. Press Ctrl+C to stop the server." << endl;
+        while (true)
+            this_thread::sleep_for(chrono::seconds(1));
 
         // Stop the server instance
         server_instance.stop();
