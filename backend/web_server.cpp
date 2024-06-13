@@ -89,6 +89,7 @@ void WebServer::handleGenerate(http_request request) {
         try {
             // Extract the text field from the JSON request
             utility::string_t text = request_json[U("text")].as_string();
+            std::cout << "Prompt: " << text << std::endl;
             int seed = rand() % 1000; // Generate a random seed for the image generation
 
             // Create a JSON request body for the inference server
